@@ -1,0 +1,6 @@
+<p>this is the controller view</p>
+<%= simple_form_for @form, url: root_path, as: :thing do |f| %>
+  <%= f.input :one %>
+  <%= f.input :two %>
+<% end %>
+<%= concept('thing/cell', @operation) %>
