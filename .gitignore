@@ -1,5 +1,6 @@
 *.un~
 *.swp
-/db
+/db/*
+!/db/migrate
 /log
 /tmp

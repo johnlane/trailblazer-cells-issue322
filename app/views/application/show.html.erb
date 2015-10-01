@@ -2,5 +2,9 @@
 <%= simple_form_for @form, url: root_path, as: :thing do |f| %>
   <%= f.input :one %>
   <%= f.input :two %>
+  <%= f.simple_fields_for :others do |m| %>
+    <%= m.input :three %>
+    <%= m.input :four %>
+  <% end %>
 <% end %>
 <%= concept('thing/cell', @operation) %>

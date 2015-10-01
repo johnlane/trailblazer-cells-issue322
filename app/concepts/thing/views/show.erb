@@ -2,4 +2,8 @@
 <%= simple_form_for model.contract, url: root_path, as: :test do |f| %>
   <%= f.input :one %>
   <%= f.input :two %>
+  <%= f.simple_fields_for :others do |m| %>
+    <%= m.input :three %>
+    <%= m.input :four %>
+  <% end %>
 <% end %>
